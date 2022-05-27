@@ -5,6 +5,20 @@
   padding-bottom: 200px;
   background-color: var(--hero-bcg-color);
   text-align: center;
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 30px;
+
+    color: var(--address-color);
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
 }
 
 .overlay {
@@ -15,20 +29,6 @@
 
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/imghero.jpg);
-}
-
-.hero__title {
-  margin-top: 0;
-  margin-bottom: 30px;
-
-  color: var(--address-color);
-
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
 }
 
 .main-button {
@@ -52,9 +52,9 @@
   cursor: pointer;
 
   transition: background-color 250ms var(--timing-function);
-}
 
-.main-button:hover,
-.main-button:focus {
-  background-color: var(--herohover-bcg-color);
+  &:hover,
+  &:focus {
+    background-color: var(--herohover-bcg-color);
+  }
 }
