@@ -1,3 +1,4 @@
+/* base */
 :root {
   /* text colors */
   --primary-text-color: #212121;
@@ -39,6 +40,14 @@ img {
   height: auto;
 }
 
+/* utils */
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  background-color: var(--primary-bcg-color);
+}
+
 .container {
   /* outline: 2px solid tomato; */
   width: 1200px;
@@ -46,6 +55,20 @@ img {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .list {
@@ -448,12 +471,6 @@ img {
   border-color: transparent;
 }
 
-/* .policy__input:checked:focus + .policy__checkbox,
-.policy__input:checked:hover + .policy__checkbox {
-  outline: 1px solid var(--primary-text-color);
-  border-radius: 2px;
-} */
-
 .policy__title {
   /* margin-right: 0.3em; */
   line-height: 1.71;
@@ -474,27 +491,6 @@ img {
 }
 
 /* features, work, team sections */
-.hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-
-  background-color: var(--primary-bcg-color);
-}
-
 .section__heading {
   margin-top: 0;
   margin-bottom: 50px;
