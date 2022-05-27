@@ -1,0 +1,156 @@
+/* footer */
+/* logo in footer */
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: var(--footer-bcg-color);
+}
+
+.footer__container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer__logo {
+  margin-right: 0;
+}
+
+.logo__secondary--white-theme {
+  color: var(--address-color);
+}
+
+/* address styles */
+.footer__contacts {
+  margin-right: auto;
+}
+
+.address {
+  margin-top: 20px;
+
+  color: var(--address-color);
+  font-style: normal;
+  line-height: 1.71;
+}
+
+.address__link {
+  color: var(--contacts-color);
+
+  line-height: 1.71;
+  text-decoration: none;
+  transition: color 250ms var(--timing-function);
+}
+
+.address__link:hover,
+.address__link:focus {
+  color: var(--accent-color);
+}
+
+.address__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+/* Corporate networks styles */
+.join {
+  margin-right: 93px;
+}
+
+.join__call {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: var(--address-color);
+}
+
+.join-list {
+  display: flex;
+}
+
+.join-list__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.join-list__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50%;
+
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: var(--address-color);
+
+  transition: background-color 250ms var(--timing-function), fill 250ms var(--timing-function);
+}
+
+.join-list__link:hover,
+.join-list__link:focus {
+  background-color: var(--accent-color);
+}
+
+/* subscribe styles */
+.subscribe-form {
+  display: flex;
+  align-items: flex-end;
+}
+
+.subscribe-field {
+  display: flex;
+  flex-direction: column;
+
+  width: 358px;
+
+  margin-right: 12px;
+}
+
+.subscribe-field__label {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: var(--address-color);
+}
+
+.subscribe-field__input {
+  width: 100%;
+  height: 50px;
+  padding: 15px 16px;
+
+  font-size: 16px;
+  line-height: 1.25;
+
+  outline: none;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  background-color: var(--footer-bcg-color);
+  color: var(--address-color);
+  transition: border 250ms var(--timing-function);
+}
+
+.subscribe-field__input:hover,
+.subscribe-field__input:focus {
+  border: 1px solid var(--address-color);
+}
+
+.subscribe-field__input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.main-button__icon {
+  fill: currentColor;
+  text-align: center;
+  margin-left: 10px;
+}
